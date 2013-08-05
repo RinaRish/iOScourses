@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Tweet.h"
 
 @interface TweetDetailViewController : UIViewController
 
-@property (nonatomic, copy) NSString *detailText;
+@property (nonatomic, weak) IBOutlet UILabel *detailLabel;
+@property (strong, nonatomic) Tweet *tweetDetail;
 
 @end

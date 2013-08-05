@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "User.h"
 
 @interface Tweet : NSObject
 
@@ -14,6 +15,7 @@
 @property (nonatomic, copy) NSString *text;
 @property (nonatomic, copy) NSString *poster;
 @property (nonatomic, copy) NSString *date;
+//@property (strong, nonatomic) User *userProfile;
 
 - (id)initWithText:(NSString *)theText
             author:(NSString *)theAuthor

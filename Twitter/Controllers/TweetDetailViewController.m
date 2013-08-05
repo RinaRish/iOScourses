@@ -7,10 +7,9 @@
 //
 
 #import "TweetDetailViewController.h"
+#import "Tweet.h"
 
 @interface TweetDetailViewController ()
-
-@property (nonatomic, weak) IBOutlet UILabel *detailLabel;
 
 @end
 
@@ -29,7 +28,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.detailLabel.text = self.detailText;
+    //self.detailText = [NSMutableArray arrayWithCapacity:5];
+    self.detailLabel.text = self.tweetDetail.text;
 }
 
 - (void)didReceiveMemoryWarning

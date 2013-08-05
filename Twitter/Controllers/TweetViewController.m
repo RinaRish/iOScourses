@@ -89,8 +89,8 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"TweetSegue"]) {
         TweetDetailViewController *vc = (TweetDetailViewController *)segue.destinationViewController;
-        vc.detailText = @"My label";
-        //self.contacts[[self.tableView indexPathForSelectedRow].row];
+        vc.tweetDetail = self.tweets[[self.tableView indexPathForSelectedRow].row]; //@"My label"; 
+       
     }
 }
 
