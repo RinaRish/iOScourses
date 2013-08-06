@@ -11,16 +11,12 @@
 
 @interface Tweet : NSObject
 
-@property (nonatomic, copy) NSString *author;
 @property (nonatomic, copy) NSString *text;
-@property (nonatomic, copy) NSString *poster;
 @property (nonatomic, copy) NSString *date;
-//@property (strong, nonatomic) User *userProfile;
+@property (strong, nonatomic) User *userProfile;
 
 - (id)initWithText:(NSString *)theText
-            author:(NSString *)theAuthor
-            poster:(NSString *)thePoster
+            userProfile:(User *)theUserProfile
               date:(NSString *)theDate;
-
 
 @end

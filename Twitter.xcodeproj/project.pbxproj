@@ -37,8 +37,8 @@
 		99618D6917AC0DD100BC5A10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		99618D6B17AC0DD100BC5A10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		99618D6D17AC0DD100BC5A10 /* Twitter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Twitter-Prefix.pch"; sourceTree = "<group>"; };
-		99618D6E17AC0DD100BC5A10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		99618D6F17AC0DD100BC5A10 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		99618D6E17AC0DD100BC5A10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		99618D6F17AC0DD100BC5A10 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
 		99618D7117AC0DD100BC5A10 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		99618D7317AC0DD100BC5A10 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		99618D7517AC0DD100BC5A10 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -47,14 +47,14 @@
 		99618D8417AC0F0B00BC5A10 /* TweetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetViewController.m; sourceTree = "<group>"; };
 		99618D8717AC100E00BC5A10 /* TweetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetCell.h; sourceTree = "<group>"; };
 		99618D8817AC100E00BC5A10 /* TweetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetCell.m; sourceTree = "<group>"; };
-		99618D8A17AC113D00BC5A10 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		99618D8A17AC113D00BC5A10 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = placeholder.png; path = ../../placeholder.png; sourceTree = "<group>"; };
 		99BDB9B117AC247200C626AC /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
 		99BDB9B217AC247200C626AC /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
 		99BDB9B417AC24D600C626AC /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		99BDB9B517AC24D600C626AC /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		99BDB9B717AC274E00C626AC /* ShawshankRedemption_poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ShawshankRedemption_poster.jpg; sourceTree = "<group>"; };
-		99BDB9B917AC276800C626AC /* TheGodfather_poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TheGodfather_poster.jpg; sourceTree = "<group>"; };
-		99BDB9BA17AC276800C626AC /* TheGodfatherPart2_poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TheGodfatherPart2_poster.jpg; sourceTree = "<group>"; };
+		99BDB9B717AC274E00C626AC /* ShawshankRedemption_poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ShawshankRedemption_poster.jpg; path = ../../ShawshankRedemption_poster.jpg; sourceTree = "<group>"; };
+		99BDB9B917AC276800C626AC /* TheGodfather_poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = TheGodfather_poster.jpg; path = ../../TheGodfather_poster.jpg; sourceTree = "<group>"; };
+		99BDB9BA17AC276800C626AC /* TheGodfatherPart2_poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = TheGodfatherPart2_poster.jpg; path = ../../TheGodfatherPart2_poster.jpg; sourceTree = "<group>"; };
 		99BDB9BD17AC2CD200C626AC /* TweetDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetDetailViewController.h; sourceTree = "<group>"; };
 		99BDB9BE17AC2CD200C626AC /* TweetDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,16 +103,11 @@
 		99618D6517AC0DD100BC5A10 /* Twitter */ = {
 			isa = PBXGroup;
 			children = (
+				99BDB9C317B12F6900C626AC /* Delegates */,
+				99BDB9C017B12EE500C626AC /* Resources */,
 				99BDB9AE17AC242A00C626AC /* Models */,
-				99618D8A17AC113D00BC5A10 /* placeholder.png */,
-				99BDB9B917AC276800C626AC /* TheGodfather_poster.jpg */,
-				99BDB9BA17AC276800C626AC /* TheGodfatherPart2_poster.jpg */,
-				99BDB9B717AC274E00C626AC /* ShawshankRedemption_poster.jpg */,
 				99618D8617AC0FE000BC5A10 /* Views */,
 				99618D8217AC0DF100BC5A10 /* Controllers */,
-				99618D6E17AC0DD100BC5A10 /* AppDelegate.h */,
-				99618D6F17AC0DD100BC5A10 /* AppDelegate.m */,
-				99618D7717AC0DD100BC5A10 /* MainStoryboard.storyboard */,
 				99618D6617AC0DD100BC5A10 /* Supporting Files */,
 			);
 			path = Twitter;
@@ -177,6 +172,43 @@
 				99BDB9B217AC247200C626AC /* Tweet.m */,
 			);
 			path = Tweet;
+			sourceTree = "<group>";
+		};
+		99BDB9C017B12EE500C626AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				99BDB9C217B12F3D00C626AC /* Design */,
+				99BDB9C117B12F1100C626AC /* Storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		99BDB9C117B12F1100C626AC /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				99618D7717AC0DD100BC5A10 /* MainStoryboard.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		99BDB9C217B12F3D00C626AC /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				99618D8A17AC113D00BC5A10 /* placeholder.png */,
+				99BDB9B917AC276800C626AC /* TheGodfather_poster.jpg */,
+				99BDB9BA17AC276800C626AC /* TheGodfatherPart2_poster.jpg */,
+				99BDB9B717AC274E00C626AC /* ShawshankRedemption_poster.jpg */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		99BDB9C317B12F6900C626AC /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				99618D6E17AC0DD100BC5A10 /* AppDelegate.h */,
+				99618D6F17AC0DD100BC5A10 /* AppDelegate.m */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +308,7 @@
 				99618D7817AC0DD100BC5A10 /* en */,
 			);
 			name = MainStoryboard.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -12,24 +12,18 @@
 
 - (id)init
 {
-    self = [self initWithText:nil
-                       author:nil
-                       poster:nil
+    return [self initWithText:nil
+                  userProfile:nil
                          date:nil];
-    
-    self = [super init];
-    return self;
 }
 
 - (id)initWithText:(NSString *)theText
-            author:(NSString *)theAuthor
-            poster:(NSString *)thePoster
+       userProfile:(User *)theUserProfile
               date:(NSString *)theDate {
     self = [super init];
     if(self) {
         self.text = theText;
-        self.author = theAuthor;
-        self.poster = thePoster;
+        self.userProfile = theUserProfile;
         self.date = theDate;
         
     }

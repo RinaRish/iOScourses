@@ -10,7 +10,6 @@
 
 @interface TweetViewController : UIViewController
 
-@property (nonatomic, strong) NSMutableArray *tweets;
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 
 

@@ -12,7 +12,7 @@
 #import "TweetDetailViewController.h"
 
 @interface TweetViewController () <UITableViewDataSource, UITableViewDelegate>
-
+@property (nonatomic, strong) NSMutableArray *tweets;
 @end
 
 @implementation TweetViewController
@@ -29,20 +29,17 @@
 
     
     Tweet *tweetOne = [[Tweet alloc] initWithText:@"Hello World"
-                                           author:@"Kate"
-                                           poster:@"ShawshankRedemption_poster.jpg"
+                                      userProfile:[[User alloc] initWithName:@"Kate" photo:@"ShawshankRedemption_poster.jpg" following:0 followers:0]
                                              date:@"today"];
     [self.tweets addObject:tweetOne];
     
     Tweet *tweetTwo = [[Tweet alloc] initWithText:@"Good morning"
-                                           author:@"Sam"
-                                           poster:@"TheGodfather_poster.jpg"
+                                      userProfile:[[User alloc] initWithName:@"Sam" photo:@"TheGodfather_poster.jpg" following:0 followers:0]
                                              date:@"today"];
     [self.tweets addObject:tweetTwo];
     
     Tweet *tweetThree = [[Tweet alloc] initWithText:@"Good night"
-                                             author:@"Bill"
-                                             poster:@"TheGodfatherPart2_poster.jpg"
+                                             userProfile:[[User alloc] initWithName:@"Bill" photo:@"TheGodfatherPart2_poster.jpg" following:0 followers:0]
                                                date:@"today"];
     [self.tweets addObject:tweetThree];
 
@@ -72,9 +69,9 @@
     
     Tweet *tweet = (self.tweets)[indexPath.row];
     
-    cell.name.text = tweet.author;
+    cell.name.text = tweet.userProfile.name;
     cell.tweetText.text = tweet.text;
-    cell.imageView.image = [UIImage imageNamed:tweet.poster];
+    cell.poster.image = [UIImage imageNamed:tweet.userProfile.photo];
     return cell;
 }
 

@@ -11,12 +11,10 @@
 @implementation User
 
 -(id) init {
-    self = [self initWithName:nil
+    return [self initWithName:nil
                         photo:nil
                     following:0
                     followers:0];
-    self = [super init];
-    return self;
 }
 
 - (id)initWithName:(NSString *)theName
